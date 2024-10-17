@@ -371,8 +371,8 @@
  * - Обчислювальні властивості
  */
 
-const username = "Alice";
-const age = 25;
+// const username = "Alice";
+// const age = 25;
 
 // Потрібно створити обєкт на основі цих даних
 
