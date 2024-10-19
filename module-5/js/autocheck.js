@@ -1897,3 +1897,24 @@
 // Оголошена змінна names
 // Значення змінної names - це масив ["Bernard Cornwell", "Howard Lovecraft", "Robert Sheckley"]
 // Змінна names повинна формуватися за допомогою ланцюжка методів filter, map, toSorted, при цьому інші змінні не повинні оголошуватись
+
+// ---------------------------------------------------
+
+// const products = [
+//   { name: 'Apple', category: 'fruits', price: 1.2, stock: 50 },
+//   { name: 'Banana', category: 'fruits', price: 0.8, stock: 100 },
+//   { name: 'Carrot', category: 'vegetables', price: 0.5, stock: 200 },
+//   { name: 'Broccoli', category: 'vegetables', price: 1.0, stock: 150 },
+//   { name: 'Milk', category: 'dairy', price: 1.5, stock: 20 },
+//   { name: 'Cheese', category: 'dairy', price: 2.5, stock: 5 },
+//   { name: 'Chicken', category: 'meat', price: 5.0, stock: 30 },
+//   { name: 'Beef', category: 'meat', price: 7.0, stock: 25 }
+// ];
+
+// function areAllDairyStockAboveTen(products) {
+//   return products
+//       .filter(product => product.category === 'dairy')
+//       .every(product => product.stock > 10);
+// }
+
+// console.log(areAllDairyStockAboveTen(products)); //false
