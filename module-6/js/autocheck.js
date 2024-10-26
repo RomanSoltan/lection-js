@@ -1716,3 +1716,26 @@
 // Після виклику mango.blacklist("poly@mail.com") значення властивості blacklistedEmails - це масив ["poly@mail.com"]
 // Виклик mango.isBlacklisted("mango@mail.com") повертає false
 // Виклик mango.isBlacklisted("poly@mail.com") повертає true
+
+// --------------------------------------
+
+// const marriage = {
+//   husband: 'Christian',
+//   wife: 'Alice',
+//   husbandsLastName: 'Verley',
+//   wifesLastName: 'Swarowski',
+//   changeLastName() {
+//     return `And from now on, I announce you, ${this.wife} ${this.wifesLastName}, Missis ${this.husbandsLastName}, as your husband ${this.husband}.`;
+//   }
+// }
+// console.log(marriage);
+
+
+// function stateMarriage(callback) {
+//   const announcement = callback();
+//   console.log(`I solemnly announce you husband and wife! ${announcement} You can kiss each other!`);
+//   marriage.wifesLastName = marriage.husbandsLastName;
+//   console.log(marriage);
+// }
+
+// stateMarriage(marriage.changeLastName.bind(marriage));
