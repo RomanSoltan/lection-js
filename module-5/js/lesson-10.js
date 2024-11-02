@@ -2,11 +2,11 @@
 
 // ========================================= 1
 
-/** 
+/**
  * Метод filter
- * 
+ *
  * - Поелеметно перебирає оригінальний масив
- * - Повертає новий масив 
+ * - Повертає новий масив
  * (з елементами або порожній)
  * - Додає в масив, що повертається, елементи,
  * які задовольняють умову callback-функції
@@ -14,7 +14,7 @@
  * додається в масив, що повертається
  *    - Якщо callback повернув false, елемент
  * НЕ додається в масив, що повертається
-*/
+ */
 
 /* 
 Що робить метод filter?
@@ -104,26 +104,26 @@ filtered [5, 10].
 //     { make: "Ford", model: "Explorer", type: "suv", amount: 6, price: 31660, onSale: false }
 //   ];
 
-  /**
- * Нехай функція filterByPrice повертає масив 
+/**
+ * Нехай функція filterByPrice повертає масив
  * автомобілів, ціна яких менша, ніж значення
  * параметра threshold.
  */
 
-// const filterByPrice = (cars, threshold) => 
+// const filterByPrice = (cars, threshold) =>
 //   cars.filter(car => car.price < threshold);
 
 // console.table(filterByPrice(allCars, 27110));
-  
+
 // -------------------------------------------------
 
 /**
- * Нехай функція getCarsWithType повертає масив 
+ * Нехай функція getCarsWithType повертає масив
  * автомобілів, тип яких збігається зі значенням
  * параметра type.
  */
 
-// const getCarsWithType = (arr, type) => 
+// const getCarsWithType = (arr, type) =>
 //   arr.filter(item => item.type === type);
 
 // console.table(getCarsWithType(allCars, "suv"));
@@ -132,14 +132,14 @@ filtered [5, 10].
 
 // =================================================== 2
 
-/** 
+/**
  * Метод find
- * 
+ *
  * - Поелементно перебирає оригінальний
  * масив
  * - Повертає перший елемент, що задовільняє
  * умову перевірки або undefined, якщо не задовільняє
-*/
+ */
 
 /* 
 Що робить метод find()?
@@ -168,7 +168,7 @@ filtered [5, 10].
 find(), тобто це метод масиву, отже 
 викликати його може тільки масив. 
 2. Цей метод приймає в себе callback-
-функцію, яка передана, в метод filter, 
+функцію, яка передана, в метод find, 
 під час його виклику, як аргумент. 
 3. Отже передаємо в метод callback 
 функцію і пишемо її у форматі стрілочної.
@@ -212,7 +212,7 @@ filter i find у тому, що filter поверне
 
 // console.log(number); // 15
 
-// ------------------------------------------------------- 
+// -------------------------------------------------------
 
 // const cars = [
 //   { make: "Honda", model: "CR-V", type: "suv", amount: 14, price: 24045, onSale: true},
@@ -227,11 +227,11 @@ filter i find у тому, що filter поверне
 //   { make: "Ford", model: "Explorer", type: "suv", amount: 6, price: 31660, onSale: false }
 // ];
 
-/** 
+/**
  * Шукаємо машину за моделлю
-*/
+ */
 
-// const findByModel = (arr, model) => 
+// const findByModel = (arr, model) =>
 //   arr.find((car) => car.model === model);
 
 // console.log(findByModel(cars, "Accord"));
@@ -241,9 +241,9 @@ filter i find у тому, що filter поверне
 
 // -------------------------------------------
 
-/** 
+/**
  * Шукаємо машину за типом кузова
-*/
+ */
 
 /* 
 Типів седан у нас декілька у масиві,
@@ -261,13 +261,13 @@ filter i find у тому, що filter поверне
 
 // ======================================= 3
 
-/** 
+/**
  * Метод every
- * 
+ *
  * - Поелементно перебирає оригінальний масив
  * - Повертає true, якщо всі елементи масиву
  * задовільняють умову
-*/
+ */
 
 /* 
 Що робить метод every()?
@@ -291,7 +291,6 @@ filter i find у тому, що filter поверне
 // const isAllOnline = players.every((player, index, arr) => player.online);
 
 // console.log(isAllOnline); // false
-
 
 /* 
 Як це працює?
@@ -329,9 +328,9 @@ false, то метод every поверне false.
 
 /**
  * Метод some
- * 
+ *
  * - Поелементно перебирає оригінальний масив
- * - Повертає true, якщо хоча б один елемент 
+ * - Повертає true, якщо хоча б один елемент
  * масиву задовільняє умову
  */
 
@@ -344,7 +343,6 @@ false, то метод every поверне false.
 яка задана у тілі callback-функції, поверне true.
 */
 
-
 // const players = [
 // 	{ id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
 // 	{ id: "player-2", name: "Poly", timePlayed: 470, points: 92, online: true },
@@ -356,7 +354,6 @@ false, то метод every поверне false.
 // const isAllOnline = players.some((player, index, arr) => player.online);
 
 // console.log(isAllOnline); // true
-
 
 /* 
 Як це працює?
@@ -392,13 +389,13 @@ true, то метод some поверне true.
 
 // =============================================== 4
 
-/** 
+/**
  * Метод reduce
- * 
+ *
  * - Поелементно перебирає оригінальний масив.
  * - Значення, що повертаються, залежать
  * від розробника.
-*/
+ */
 
 /* 
 Що робить метод reduce()?
@@ -521,9 +518,9 @@ reduce може прймати другий аргумент.
 
 // ------------------------------------------------
 
-/** 
+/**
  * Рахуємо загальну зарплату
-*/
+ */
 
 // const salary = {
 // 	mango: 100,
@@ -531,16 +528,16 @@ reduce може прймати другий аргумент.
 // 	ajax: 150,
 // };
 
-// const totalSalary = 
+// const totalSalary =
 // 	Object.values(salary).reduce((acc, num) => acc + num, 0);
 
 // console.log(totalSalary);
 
 // -----------------------------------------------------
 
-/** 
+/**
  * Рахуємо загальну кількість годин
-*/
+ */
 
 /*
 У цьому випадку потрібно задавати
@@ -560,7 +557,7 @@ reduce може прймати другий аргумент.
 // 	{ id: "player-5", name: "Chelsy", timePlayed: 80, points: 48, online: true },
 // ];
 
-// const total = 
+// const total =
 // 	players.reduce((acc, player) => acc + player.timePlayed, 0);
 
 // console.log(total); // 1240
@@ -585,19 +582,19 @@ reduce може прймати другий аргумент.
 
 // ================================================ 5
 
-/** 
+/**
  * Метод toSorted
- * 
+ *
  * - Свій порядок сортування чисел
  * - Свій порядок сортування рядків
  * - Сортування обєктів
- * 
+ *
  * За замовчуванням:
  * - сортує за зростанням
- * - приводить елементи до рядка і 
+ * - приводить елементи до рядка і
  * сортує за Unicode
  * - не змінює вихідний масив
-*/
+ */
 
 /*
 Що робить метод toSorted()?
@@ -611,7 +608,6 @@ reduce може прймати другий аргумент.
 // const sorted = numbers.toSorted();
 
 // console.log(sorted);
-
 
 /* 
 Як це працює? 
@@ -702,7 +698,7 @@ callback-функції прописати a - b, тобто від
 
 // За ігровим часом
 
-// const sortedByTime = 
+// const sortedByTime =
 // 	players.toSorted((a, b) => a.timePlayed - b.timePlayed);
 
 // console.table(sortedByTime);
@@ -711,9 +707,9 @@ callback-функції прописати a - b, тобто від
 
 // =========================================== 6
 
-/** 
+/**
  * Ланцюжки методів
-*/
+ */
 
 /* 
 За допомогою ланцюжка методів не 
@@ -770,7 +766,6 @@ callback-функції прописати a - b, тобто від
 //   { make: "Ford", model: "Explorer", type: "suv", amount: 6, price: 31660, onSale: false }
 // ];
 
-
 /**
  * Нехай функція getModelsOnSale повертає масив моделей
  * автомобілів, але тільки тих, які зараз на розпродажі.
@@ -787,8 +782,8 @@ callback-функції прописати a - b, тобто від
 // -------------------------------------------------------
 
 /**
- * Нехай функція getSortedCarsOnSale повертає 
- * масив автомобілів на розпродажі 
+ * Нехай функція getSortedCarsOnSale повертає
+ * масив автомобілів на розпродажі
  * (Властивість onSale), відсортованих за зростанням ціни.
  */
 
@@ -819,7 +814,7 @@ callback-функції прописати a - b, тобто від
 //   .filter((course, index, array) => array.indexOf(course) === index)
 //   .toSorted((a, b) => a.localeCompare(b));
 
-// console.log(uniqueSortedCourses); 
+// console.log(uniqueSortedCourses);
 // // ["biology", "science", "literature", "mathematics", "physics"]
 
 // ----------------------------------------------------------
@@ -833,11 +828,10 @@ callback-функції прописати a - b, тобто від
 
 // 	acc[itemArr[0]] = itemArr[1];
 // 	return acc;
-	
+
 // }, {});
 
 // console.log(obj);
-
 
 /** */
 /* */
