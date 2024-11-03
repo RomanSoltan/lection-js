@@ -22,39 +22,40 @@ event.target.elements
 цього ключа буде
 */ 
 
-const form = document.querySelector(".js-form");
-form.addEventListener("submit", handleSubmit)
+// const form = document.querySelector(".js-form");
+// form.addEventListener("submit", handleSubmit)
 
-function handleSubmit(event) {
-  event.preventDefault(); 
+// function handleSubmit(event) {
+//   event.preventDefault(); 
 
-  const elements = event.target.elements;
+//   const elements = event.target.elements;
 
-// на цьому етапі можемо провести перевірку
+// // на цьому етапі можемо провести перевірку
 
-  const info = {
-    email: elements.email.value,
-    password: elements.password.value,
-    comment: elements.comment.value
-  }
+//   // cтворимо обєкт, куди покладемо дані з форми 
+//   const info = {
+//     email: elements.email.value,
+//     password: elements.password.value,
+//     comment: elements.comment.value
+//   }
 
-  // console.log(info);
-  // // отримаємо обєкт даних, де буде імейл
-  // // пароль, комент, які ми ввели при 
-  // // заповненні форми
+//   console.log(info);
+//   // отримаємо обєкт даних, де буде імейл
+//   // пароль, комент, які ми ввели при 
+//   // заповненні форми
 
-  event.target.reset();
-  // для очищення форми
+//   event.target.reset();
+//   // для очищення форми
 
-  // alert(JSON.stringify(info));
+//   // alert(JSON.stringify(info));
 
-  // console.log(elements.email);
-  // // отримаємо посилання на тег інпут, на текстове поле,
-  // // у якого name="email"
+//   // console.log(elements.email);
+//   // // отримаємо посилання на тег інпут, на текстове поле,
+//   // // у якого name="email"
 
-  // console.log(elements.email.value);
-  // // отримаємо доступ до даних
-}
+//   // console.log(elements.email.value);
+//   // // отримаємо доступ до даних
+// }
 
 /* currentTarget - буде те, на кого додали слухач,
 а тarget - буде те, на чому відбувається зараз подія */ 
