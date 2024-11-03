@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Подія сабміту форми</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Подія сабміту форми</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
 
-  <p><a href="index.html">Go back</a></p>
+    <form class="js-form feedback-form">
+      <input
+        type="text"
+        name="email"
+        class="form-input"
+        placeholder="Email"
+      />
+      <input
+        type="password"
+        name="password"
+        class="form-input"
+        placeholder="Password"
+      />
+      <textarea
+        cols="30"
+        rows="10"
+        name="comment"
+        class="form-textarea"
+        placeholder="Comment"
+      ></textarea>
+      <button class="form-button" type="submit">Submit</button>
+    </form>
 
-  <script src="./js/03-forms.js"></script>
-</body>
+    <script src="./js/03-forms.js"></script>
+  </body>
 </html>
