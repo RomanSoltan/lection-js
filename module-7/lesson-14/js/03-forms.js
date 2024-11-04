@@ -28,7 +28,10 @@ event.target.elements
 // function handleSubmit(event) {
 //   event.preventDefault(); 
 
+//   // отримуємо доступ до елементів у розмітці
 //   const elements = event.target.elements;
+//   console.log(elements);
+  
 
 // // на цьому етапі можемо провести перевірку
 

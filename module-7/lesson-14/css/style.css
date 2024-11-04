@@ -31,6 +31,24 @@ input {
   background-color: red;
 }
 
+.box.js-box {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  padding-top: 50px;
+}
+
+.inner-box {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+}
+
+.box.box--active {
+  background-color: #ff6600;
+}
+
 .feedback-form {
   display: flex;
   flex-direction: column;
