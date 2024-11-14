@@ -274,15 +274,25 @@ this, контекстом для якого буде обєкт user.
 //   userName: "Kate"
 // }
 
-// // user.showUserThis = showThis;
-// // user.showUserThis() // showThis()
-// // console.log(user); // {userName: 'Kate', showUserThis: ƒ}
+// user.showUserThis = showThis;
+// user.showUserThis() // showThis()
+// console.log(user); // {userName: 'Kate', showUserThis: ƒ}
 
 // /* 
 // Якщо ми зробимо так як в прикладі нижче, 
 // то в user.showUserThis одразу збережеться 
 // результат виконання функції showThis()
 // */
+
+// function showThis() {
+//   console.log("this", this);
+//   // "this" window
+// }
+
+// const user = {
+//   userName: "Kate"
+// }
+
 // user.showUserThis = showThis();
 // console.log(user.showUserThis); // undefined
 // user.showUserThis() // TypeError
@@ -342,7 +352,9 @@ this.userName виникне помилка в консолі.
 //   userName: "Petya",
 //   showThis() {
 //     console.log("this", this);
+//     // this window
 //     console.log("username", this.userName);
+//     // username undefined
 //   }
 // }
 
@@ -350,6 +362,14 @@ this.userName виникне помилка в консолі.
 // foo();
 
 // console.log(foo);
+/*
+showThis() {
+  console.log("this", this);
+  // this window
+  console.log("username", this.userName);
+  // username undefined
+}
+*/ 
 
 // ---------------------------------------------
 
@@ -385,7 +405,7 @@ callback-функція, тобто аргументом в іншу
 Нічого і режим не суворий, то this буде
 window, a this.userName - undefined.
 Тому що контекст у функцію showThis
-порпляє під час виклику callback.
+порапляє під час виклику callback.
 */
 
 // const user = {
