@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Витерти пил",
+      "completed": false
+    },
+    {
+      "title": "Помити посуд",
+      "id": "2",
+      "completed": false
+    },
+    {
+      "title": "Винести сміття",
+      "id": "3",
+      "completed": false
+    },
+    {
+      "id": "66a9",
+      "title": "Купити шоколад",
+      "completed": false
+    },
+    {
+      "id": "05d4",
+      "title": "Купити хліб",
+      "completed": false
+    },
+    {
+      "id": "545e",
+      "title": "Піти працювати",
+      "completed": false
+    }
+  ]
+}
